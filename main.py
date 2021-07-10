@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-bot_requests = BotRequests()
+#bot_requests = BotRequests()
 
 
 @app.route('/')
