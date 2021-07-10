@@ -24,7 +24,7 @@ class Database:
                 password=os.environ.get('DB_PASS'),
                 database=os.environ.get('DB_NAME'),
                 query={
-                    "unix_sock":"/cloudsql/" + os.environ.get('CLOUD_SQL_CONNECTION_NAME') + "/./s.PGSQL.5432")
+                    "unix_sock":"/cloudsql/" + os.environ.get('CLOUD_SQL_CONNECTION_NAME') + "/./s.PGSQL.5432"
                 }
             ),
             **db_config
