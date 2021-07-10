@@ -33,7 +33,7 @@ class Database:
         self.cursor = conn.connect()
     
     def update_position(self, user, action, amount, ticker, price):
-        sql = "INSERT INTO portfolio_actions (action_date, user, action, amount, ticker) VALUES (%s, %s, %s, %s, %s)"
+        sql = "INSERT INTO portfolio_actions (action_date, username, action, amount, ticker) VALUES (%s, %s, %s, %s, %s)"
         self.cursor.execute(sql, values)
         self.db.commit()
         return 200
