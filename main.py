@@ -1,4 +1,4 @@
-from BotRequests import BotRequests
+#from BotRequests import BotRequests
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ bot_requests = BotRequests()
 @app.route('/')
 def update_position():
     return "Hello world"
-
+"""
 @app.route('/update_position')
 def update_position():
     data = request.args
@@ -27,6 +27,6 @@ def show_owns():
     data = request.args
     address = bot_requests.show_positions(data)
     return address
-    
+"""
 if __name__ == '__main__':
     app.run(debug=True)
