@@ -5,6 +5,11 @@ app = Flask(__name__)
 
 bot_requests = BotRequests()
 
+
+@app.route('/')
+def update_position():
+    return "Hello world"
+
 @app.route('/update_position')
 def update_position():
     data = request.args
